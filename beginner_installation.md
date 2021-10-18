@@ -129,9 +129,14 @@ nvm我还没装
 
 
 ## 用docsify建博客
-
+[docsify](https://docsify.js.org/#/)
 
 
 ## 有用的网站们<br>
 [Github Docs 官方 中英文](https://docs.github.com/cn)<br>
-[Github常用命令备忘单](https://training.github.com/downloads/zh_CN/github-git-cheat-sheet/)
+[Github常用命令备忘单](https://training.github.com/downloads/zh_CN/github-git-cheat-sheet/)<br>
+[emoji百科全书](https://emojipedia.org/)<br>
+[Godaddy买域名](https://www.godaddy.com/)
+
+
+👻👻👻👻👻👻
