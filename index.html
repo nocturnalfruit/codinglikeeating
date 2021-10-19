@@ -7,6 +7,8 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
+
 </head>
 <body>
   <div id="app"></div>
@@ -17,23 +19,47 @@
       loadSidebar: true,
       coverpage: true,
       subMaxLevel: 2,
-          alias: {
-      '/.*/_sidebar.md': '/_sidebar.md'
-        },
       plugins: [
         function (hook, vm) {
           // parse twemoji
           hook.doneEach(function() {
               twemoji.parse(document);
           });
+          // load livere
+          hook.beforeEach(function(content) {
+              var comment = "<div id='lv-container' data-id='city' data-uid='MTAyMC81NDUwOS8zMDk4MA=='></div>\n\n----\n"
+              return content + comment;
+          });
+          hook.doneEach(function() {
+             (function(d, s) {
+                 var j, e = d.getElementsByTagName(s)[0];
+                 if (typeof LivereTower === 'function') { return; }
+                 j = d.createElement(s);
+                 j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                 j.async = true;
+                 e.parentNode.insertBefore(j, e);
+             })(document, 'script');
+          });
         },
-      ]
+      ],
+      alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+        },
+        search: 'auto', // default
+        search: {
+        placeholder: '想找什么？',
+        noData: '没找到_(:з」∠)_',
+        paths: 'auto',
+        depth: 3, // Headline depth, 1 - 6
+        hideOtherSidebarContent: false
+      }
+      
   }
   </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- twemoji -->
-  <script src="cdn.jsdelivr.net/gh/TaQini/docsify-twemoji@master/twemoji.min.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <!-- twemoji plugin -->
+  <script src="//cdn.jsdelivr.net/gh/TaQini/docsify-twemoji@master/twemoji.min.js"></script>
+  <!--Search plugin-->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
