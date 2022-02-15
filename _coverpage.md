@@ -3,7 +3,7 @@
 # Coding Like Eating！
 <medium>nocturnalfruit</medium>
 
-> A magical documentation site generator.
+> Past or Future あなたは いま どこにいますが
 
 - Personal Learning Record
 - From 0 to ∞
