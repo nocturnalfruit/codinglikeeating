@@ -10,10 +10,4 @@ Coding不容易，但是不妨碍我们从战略上藐视敌人，口号就是�
 <br>
 <br>
 
-👩🏻‍💻<br>
-我的相关知识背景：
-<small> 
-- Pascal：中学参加信息学竞赛，现在只残存意识了<br>
-- Arduino, C++：能做作业的水平<br>
- - Processing：简单作业</small>
 
